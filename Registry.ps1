@@ -4933,6 +4933,4 @@ schtasks /Change /DISABLE /TN "\Microsoft\Windows\Defrag\ScheduledDefrag" | Out-
 # import reg file
 Regedit.exe /S "$env:TEMP\Registry Optimize.reg"
 Clear-Host
-Write-Host "Restart to apply . . ."
-$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
-Show-OptimizeRegistryMenu
+exit
