@@ -1230,9 +1230,9 @@ Windows Registry Editor Version 5.00
 "SearchSuggestEnabled"=dword:00000000
 
 ; locationAndSensor
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
-"DisableLocationScripting"=dword:00000001
-"DisableWindowsLocationProvider"=dword:00000001
+; [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+; "DisableLocationScripting"=dword:00000001
+; "DisableWindowsLocationProvider"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\System]
 "AllowExperimentation"=dword:00000000
@@ -1431,8 +1431,8 @@ Windows Registry Editor Version 5.00
 "DisableWindowsConsumerFeatures"=dword:00000001
 
 ; Disable Location Tracking
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
-"DisableLocation"=dword:00000001
+; [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+; "DisableLocation"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
 "Value"="Deny"
