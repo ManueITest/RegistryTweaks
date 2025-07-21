@@ -3325,8 +3325,8 @@ Windows Registry Editor Version 5.00
 "Disabled"=dword:00000001
 
 ; Disable UAC (User Account Control)
-; [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-; "EnableLUA"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLUA"=dword:00000000
 
 ; Disable Windows Ink Workspace
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
