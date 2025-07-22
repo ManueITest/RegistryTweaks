@@ -1236,7 +1236,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\System]
 "AllowExperimentation"=dword:00000000
-"AllowLocation"=dword:00000000
+; "AllowLocation"=dword:00000000
 
 ; inputpersonalization
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
