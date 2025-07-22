@@ -1332,6 +1332,28 @@ Windows Registry Editor Version 5.00
 
 ; Project ATOM
 
+; Disable UAC
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLUA"=dword:00000000
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"ConsentPromptBehaviorUser"=dword:00000000
+"FilterAdministratorToken"=dword:00000001
+"LocalAccountTokenFilterPolicy"=dword:00000001
+"ConsentPromptBehaviorUser"=dword:00000003
+"EnableUIADesktopToggle"=dword:00000000
+"ValidateAdminCodeSignatures"=dword:00000000
+"EnableInstallerDetection"=dword:00000000
+"EnableSecureUIAPaths"=dword:00000000
+"DelayedDesktopSwitchTimemout"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000
+"LocalAccountTokenFilterPolicy"=dword:00000001
+
+; Fix mouse cursor dissapeiring
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableCursorSuppression"=dword:00000000
+
 ; GPU Tweaks
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
@@ -3323,10 +3345,6 @@ Windows Registry Editor Version 5.00
 ; Disable Error Reporting
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
 "Disabled"=dword:00000001
-
-; Disable UAC (User Account Control)
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"EnableLUA"=dword:00000000
 
 ; Disable Windows Ink Workspace
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
